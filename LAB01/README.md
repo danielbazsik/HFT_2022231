@@ -1,4 +1,4 @@
-# Delegátak, névtelen függvények, lambda kifejezések
+# Delegáltak, névtelen függvények, lambda kifejezések
 
 Sources:
 
