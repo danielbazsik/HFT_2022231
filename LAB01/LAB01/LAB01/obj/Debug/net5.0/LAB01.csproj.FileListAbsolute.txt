@@ -1,0 +1,16 @@
+C:\Users\Attila\Documents\GitHub\HFT_2022231\LAB01\LAB01\LAB01\bin\Debug\net5.0\LAB01.exe
+C:\Users\Attila\Documents\GitHub\HFT_2022231\LAB01\LAB01\LAB01\bin\Debug\net5.0\LAB01.deps.json
+C:\Users\Attila\Documents\GitHub\HFT_2022231\LAB01\LAB01\LAB01\bin\Debug\net5.0\LAB01.runtimeconfig.json
+C:\Users\Attila\Documents\GitHub\HFT_2022231\LAB01\LAB01\LAB01\bin\Debug\net5.0\LAB01.runtimeconfig.dev.json
+C:\Users\Attila\Documents\GitHub\HFT_2022231\LAB01\LAB01\LAB01\bin\Debug\net5.0\LAB01.dll
+C:\Users\Attila\Documents\GitHub\HFT_2022231\LAB01\LAB01\LAB01\bin\Debug\net5.0\ref\LAB01.dll
+C:\Users\Attila\Documents\GitHub\HFT_2022231\LAB01\LAB01\LAB01\bin\Debug\net5.0\LAB01.pdb
+C:\Users\Attila\Documents\GitHub\HFT_2022231\LAB01\LAB01\LAB01\obj\Debug\net5.0\LAB01.csprojAssemblyReference.cache
+C:\Users\Attila\Documents\GitHub\HFT_2022231\LAB01\LAB01\LAB01\obj\Debug\net5.0\LAB01.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Attila\Documents\GitHub\HFT_2022231\LAB01\LAB01\LAB01\obj\Debug\net5.0\LAB01.AssemblyInfoInputs.cache
+C:\Users\Attila\Documents\GitHub\HFT_2022231\LAB01\LAB01\LAB01\obj\Debug\net5.0\LAB01.AssemblyInfo.cs
+C:\Users\Attila\Documents\GitHub\HFT_2022231\LAB01\LAB01\LAB01\obj\Debug\net5.0\LAB01.csproj.CoreCompileInputs.cache
+C:\Users\Attila\Documents\GitHub\HFT_2022231\LAB01\LAB01\LAB01\obj\Debug\net5.0\LAB01.dll
+C:\Users\Attila\Documents\GitHub\HFT_2022231\LAB01\LAB01\LAB01\obj\Debug\net5.0\ref\LAB01.dll
+C:\Users\Attila\Documents\GitHub\HFT_2022231\LAB01\LAB01\LAB01\obj\Debug\net5.0\LAB01.pdb
+C:\Users\Attila\Documents\GitHub\HFT_2022231\LAB01\LAB01\LAB01\obj\Debug\net5.0\LAB01.genruntimeconfig.cache
