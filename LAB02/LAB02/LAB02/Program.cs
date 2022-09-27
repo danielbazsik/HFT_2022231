@@ -20,8 +20,8 @@ namespace Practice_Westeros
         static void Main(string[] args)
         {
             XDocument doc = XDocument.Load("https://raw.githubusercontent.com/molnarattilanik/HFT_2022231/main/LAB02/02_war_of_westeros.xml");
-            Console.WriteLine(doc);
-            Console.ReadLine();
+            //Console.WriteLine(doc);
+           // Console.ReadLine();
             doc.Descendants("name").Select(x => x.Value).ToConsole("ALL");
 
             // Q1 = How many houses participated?
@@ -56,21 +56,27 @@ namespace Practice_Westeros
                      {
                          BattleName = battleNode.Element("name").Value,
                          Outcome = whoWon,
-                         Houses = String.Join("; ", winnerHouses)
+                         Houses = string.Join("; ", winnerHouses)
                      };
+
             Console.WriteLine(q4.Count());
             q4.ToConsole("Q4");
 
             // Q5 = Which battles had more than 2 participating houses? attacker+defender houses
             var q5 = from battleNode in doc.Descendants("battle")
-                     let attackerHouses = battleNode.Element("attacker").Elements("house").Count()
-                     let defenderHouses = battleNode.Element("defender").Elements("house").Count()
-                     let sumHouses1 = attackerHouses + defenderHouses
-                     let sumHouses2 = battleNode.Descendants("house").Count()
-                     let sumHouses3 = battleNode.Descendants("house").Select(x => x.Value).Distinct().Count()
+                     //let attackerHouses = battleNode.Element("attacker").Elements("house").Count()
+                     //let defenderHouses = battleNode.Element("defender").Elements("house").Count()
+                     //let sumHouses1 = attackerHouses + defenderHouses
+                     //let sumHouses2 = battleNode.Descendants("house").Count()
+                     let sumHouses3 = battleNode.Elements("house").Select(x => x.Value).Distinct().Count()
                      where sumHouses3 > 2
                      orderby sumHouses3 descending
-                     select new { BattleName = battleNode.Element("name").Value, NumHouses = sumHouses3, Region = battleNode.Element("region").Value };
+                     select new
+                     {
+                         BattleName = battleNode.Element("name").Value,
+                         NumHouses = sumHouses3,
+                         Region = battleNode.Element("region").Value
+                     };
             q5.ToConsole("Q5");
 
             // Q6 = Which are the 3 most violent regions? groupby
@@ -79,9 +85,11 @@ namespace Practice_Westeros
                      let cnt = grp.Count()
                      orderby cnt descending
                      select new { Region = grp.Key, Count = cnt };
+
             q6.Take(3).ToConsole("Q6");
-            var top3Counts = q6.Select(x => x.Count).Distinct().Take(3);
-            q6.Where(grp => top3Counts.Contains(grp.Count)).ToConsole("Q6 - alter");
+
+            //var top3Counts = q6.Select(x => x.Count).Distinct().Take(3);
+            //q6.Where(grp => top3Counts.Contains(grp.Count)).ToConsole("Q6 - alter");
 
             // Q7 = Which one is the most violent region?
             Console.WriteLine("Q7 = " + q6.FirstOrDefault());
@@ -101,19 +109,22 @@ namespace Practice_Westeros
                      group house by house into grp
                      let winCount = grp.Count()
                      orderby winCount descending
-                     select new { House = grp.Key, winCount };
+                     select new
+                     {
+                         House = grp.Key,
+                         winCount
+                     };
             q9.ToConsole("Q9");
 
             // Q10 = Which battle had the biggest known army? where
             var q10 = from battleNode in doc.Descendants("battle")
                       let maxSize = doc.Descendants("size").Max(x => (int)x)
                       let currentSizes = battleNode.Descendants("size").Select(x => (int)x)
-                      // let attackerSize = int.Parse(battleNode.Element("attacker").Element("size")?.Value ?? "0")
                       where currentSizes.Contains(maxSize)
                       select new
                       {
                           BattleName = battleNode.Element("name").Value,
-                          Sizes = String.Join("; ", currentSizes),
+                          Sizes = string.Join("; ", currentSizes),
                           MaxSize = maxSize
                       };
             q10.ToConsole("Q10");
