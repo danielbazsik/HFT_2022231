@@ -1,6 +1,6 @@
 # Haladó fejlesztési technikák
 
-Üdvözlök mindenkit a 2022/23/1 félév Haladó fejlesztési technikák nevezetű tárgyon. Az adott repo a labor KIEGÉSZTŐ anyagait tartalmazza.
+Üdvözlök mindenkit a 2022/23/1 félév Haladó fejlesztési technikák nevezetű tárgyon. Az adott repo a labor KIEGÉSZÍTŐ anyagait tartalmazza.
 
 # Követelmények
 
